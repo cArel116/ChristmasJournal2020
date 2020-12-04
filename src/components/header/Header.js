@@ -1,6 +1,10 @@
 import React from "react"
-import logo from '../../../public/logo.svg';
 import Button from 'react-bootstrap/Button';
+import logo from "./logo.svg"
+
+// const dashboard = [{
+//     route: "/dashboard"
+// }]
 
 export const Header = () => {
     return (
@@ -9,7 +13,7 @@ export const Header = () => {
                 <img src={logo} className="App-logo" alt="logo" />
                 <h2>Christmas Journal 2020</h2>
                 <p>
-                    <Button variant="outline-primary" to={"/dashboard"}>ENTER</Button>
+                    <Button onClick={"/list"} variant="outline-primary">ENTER</Button>
                 </p>
             </header>
         </div >
